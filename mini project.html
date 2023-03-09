@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        button{
+            font-size: 15px;
+        }
+        .meet{
+            font-size: 20px;
+        }
+    </style>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button type="button" onclick="document.getElementById('myImage').src='car.gif'">Start</button>
+<img id="myImage" src="Fortuner.jfif" style="width:25%" height="25%">   
+<button type="button" onclick="document.getElementById('myImage').src='Fortuner.jfif'" >Stop</button><br><hr>
+
+
+    
+<h2>What is Time</h2>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML=Date()">
+Click Here To See time&Date</button>
+<p id="demo"></p><br><hr>
+
+
+
+<h2>Using console.log</h2>
+    <p>Right click on screen</p>
+    <p>Go to "Inspect"</p>
+    <p>Then select "Console" in the debugger menu for see the output.</p>
+<script>
+    console.log(50/5);
+</script><br><hr>
+
+
+
+<h2><u>Using innerHTML:-</u></h2>
+    <p>My 1<sup>st</sup> Paragraph in JavaScript.</p>
+    <p id="abc"></p>
+    <script>
+        document.getElementById("abc").innerHTML = 100 / 10;
+    </script>
+<h2>Using document.write</h2>
+    <p>My first paragraph.</p>
+    <script>
+    document.write(20*5);
+    </script><br><hr>
+
+
+
+<h2>The print() Method</h2>
+<p>Click the button to print the this page.</p>
+<button onclick="print()">Print this Page</button><br><hr>
+
+
+<h2><u>None:-</u></h2>
+<p id="demo1">JavaScript can hide HTML elements.</p>
+<button type="button" onclick="document.getElementById('demo1').style.display='none'">Click Me!</button> 
+<h2><u>Display Block:-</u></h2><hr>
+
+
+
+<p>Java Script can show hidden elements.</p>
+<p id="demo2" style="display: none;">Heloo Brother 😀</p>
+<button type="button" onclick="document.getElementById('demo2').style.display='block'">Click Here!</button><hr>
+
+
+
+<h2><u>Font-Resizing:-</u></h2>
+<p id="demo">JavaScript is a Scripting Language.</p>
+<button type="button" onclick="document.getElementById('demo').style.fontSize='49px'">Click Me!</button> <hr>
+
+</body>
+</html>
